@@ -1,0 +1,24 @@
+{
+    "title": "midway sampleinterface configuration",
+    "version": "1.0.0",
+    "engine": "river-mock",
+    "rulebase": "/",
+    "status": "{{NODE_ENV}}",
+    "enablePlugins": {
+        "http": true
+    },
+    "http": {
+        "keepAliveMsecs": 5000
+    },
+    "interfaces": [{
+        "name": "Home Data",
+        "id": "Midway.HomeData",
+        "version": "1",
+        "urls": {
+            "prod"  : "http://node.taobao.net/json/sample.json",
+            "dev"   : "http://node.taobao.net/json/sample.json",
+            "local" : "http://node.taobao.net/json/sample.json"
+        },
+        "encoding": "utf8"
+    }]
+}
